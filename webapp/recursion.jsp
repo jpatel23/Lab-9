@@ -172,13 +172,18 @@
      */
     public int nnaryTreeSize(int branchingFactor, int height)
     {
-        if (height == 1) 
+          if (height == 1) 
         {
     	    //TODO
+            return 1;
         }
         
     	//TODO
-        return 0;
+        else {
+            int nodes = (int)Math.pow(branchingFactor, height - 1);
+            nodes = nodes + nnaryTreeSize(branchingFactor, height - 1);
+            return nodes;
+        }
     }
 
     /** **********************************************************************
