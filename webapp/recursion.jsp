@@ -121,7 +121,8 @@
         public Tree(int value)
         {
     	    //TODO
-            return null;
+            this.value = value;
+            children = new ArrayList<Tree>(value);
         }
     
         public int getValue()
