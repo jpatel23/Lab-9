@@ -34,7 +34,10 @@
          * This lets our recursion know when to stop.
          */
         //TODO
-
+        
+        if (value == 1) {
+            return 1;
+        }
 
         /*
          * Here is the recursive statement. The function calls itself when the 
@@ -45,7 +48,11 @@
          * By doing this, we break up the equation n! into n! = n * (n-1)!.
          */
         //TODO
-        return 0;
+        else {
+            int answer = value;
+            answer = answer * factorial(value - 1);
+            return answer; 
+        }
     }
 
     /** **********************************************************************
