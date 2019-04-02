@@ -2,13 +2,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>CS 2334 - Lab 08: Recursion</title>
+<title>CS 2334 - Lab 09: Recursion</title>
 </head>
 <body style="BACKGROUND: url(images/bcgreeen1.GIF) repeat-x" height=938>
 <%!
 
     /**
-     * Lab 08: Recursion Suite
+     * Lab 09: Recursion Suite
      * 
      * This lab tests your ability to implement recursion for several functions.
      * 
@@ -34,7 +34,10 @@
          * This lets our recursion know when to stop.
          */
         //TODO
-
+        
+        if (value == 1) {
+            return 1;
+        }
 
         /*
          * Here is the recursive statement. The function calls itself when the 
@@ -45,7 +48,11 @@
          * By doing this, we break up the equation n! into n! = n * (n-1)!.
          */
         //TODO
-        return 0;
+        else {
+            int answer = value;
+            answer = answer * factorial(value - 1);
+            return answer; 
+        }
     }
 
     /** **********************************************************************
