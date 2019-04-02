@@ -140,6 +140,7 @@
         public void add(Tree child)
         {
     	    //TODO
+            children.add(child);
         }
     }
     
