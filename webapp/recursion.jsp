@@ -128,7 +128,7 @@
         public int getValue()
         {
     	    //TODO
-            return 0;
+            return value;
         }
     
         public ArrayList<Tree> getChildren()
